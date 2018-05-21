@@ -12,7 +12,7 @@ export default class Login extends Component {
     render() {
         var logoStyle = this.state.logoSizeMax? styles.logoImage : styles.logoImageMin;
         return (
-            <KeyboardAvoidingView style={styles.mainContainer}>
+            <KeyboardAvoidingView behavior='padding' style={styles.mainContainer} >
                 <View style={styles.logoContainer}>
                     <Image source = {this.state.logoImg} style={logoStyle}/>
                     <Text style={styles.logoText}>Help to immigrant</Text>
